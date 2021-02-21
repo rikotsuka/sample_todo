@@ -73,6 +73,20 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById(deleteid).addEventListener("click", function () {
       document.getElementById(todolist).remove(todolist);
       document.getElementById(listline).remove(listline);
+      
     });
+    
   }
+});
+
+$(function() {
+	// テーブルの行の並び替え
+	$('todolist_unit').sortable({
+		opacity: 0.5,
+		placeholder: "ph1",
+		update: function(event,ui){
+			//現在の並び順を取得
+			$('#t4').text($('#t3').sortable("toArray"));
+		}
+	});
 });

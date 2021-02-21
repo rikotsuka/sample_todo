@@ -12,7 +12,15 @@
     color: #fff;
     border: none;
   }
-
+  .col-xs-8 {
+    display: inline-block;
+}
+.col-xs-1.custom-control.custom-checkbox {
+  display: inline-block;
+}
+div#todolist1 {
+  display: block;
+}
 
     .input {
         width: 100%;
